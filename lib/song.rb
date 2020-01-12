@@ -7,9 +7,8 @@ class Song
   @@songs = []
 
   extend Memorable
-  # extend Findable.self.find_by_name
-  # include Findable.to_param
-  include Findable
+  extend Findable
+  include Paramable
 
   def initialize
     @@songs << self
