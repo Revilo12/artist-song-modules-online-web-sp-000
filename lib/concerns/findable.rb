@@ -1,5 +1,5 @@
 module Findable
-  def find_by_name
+  def find_by_name(name)
     self.class.all.select {|obj| obj.name = self.name}
   end
 
