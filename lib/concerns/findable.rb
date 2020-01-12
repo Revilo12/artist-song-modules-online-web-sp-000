@@ -1,6 +1,6 @@
 module Findable
   def find_by_name(name)
-    self.class.all.select {|obj| obj.name = name}
+    self.all.select {|obj| obj.name = name}
   end
 
   def to_param
